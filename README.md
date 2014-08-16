@@ -2,7 +2,7 @@ oss-community
 =============
 
 
-Qingye Jiang, Young Choon Lee, and Joseph G. Davis
+Qingye Jiang, Young Choon Lee, and Joseph G. Davis<br>
 Centre of Parallel and High Performance Computing
 School of Information Technologies
 The University of Sydney
