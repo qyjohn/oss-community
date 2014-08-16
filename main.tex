@@ -296,15 +296,15 @@ Figure \ref{fig:core_contributor} shows the cumulative percentage of members, as
     \multicolumn{2}{|c|}{OpenStack} \\ \hline
 citrix.com & 38\% & eucalyptus.com & 86\% & opennebula.org & 92\% & redhat.com & 16\% \\ \hline
     gmail.com & 17\% & gmail.com & 12\% & c12g.com & 5\% & gmail.com & 14\% \\ \hline
-	schubergphilis.com & 8\% & devzero.com & 1\% & other & 3\% & ibm.com & 9\% \\ \hline
-	apache.org & 7\% & other & 1\% & & & openstack.org & 6\% \\ \hline
+	schubergphilis.com & 8\% & devzero.com & 1\% & others & 3\% & ibm.com & 9\% \\ \hline
+	apache.org & 7\% & others & 1\% & & & openstack.org & 6\% \\ \hline
 	cloud.com & 6\% & & & & & hp.com & 5\% \\ \hline
 	onecht.net & 4\% & & & & & mirantis.com & 4\% \\ \hline
 	solidfire.com & 3\% & & & & & suse.de & 4\% \\ \hline
 	clogeny.com & 2\% & & & & & enovance.com & 3\% \\ \hline
 	widodh.nl & 1\% & & & & & rackspace.com & 2\% \\ \hline
-	other & 14\% & & & & & intel.com & 2\% \\ \hline
-	 &  & & & & & other & 33\% \\ \hline
+	others & 14\% & & & & & intel.com & 2\% \\ \hline
+	 &  & & & & & others & 33\% \\ \hline
 \end{tabular}
 \end{table*}
 
@@ -323,11 +323,11 @@ citrix.com & 38\% & eucalyptus.com & 86\% & opennebula.org & 92\% & redhat.com &
 	outlook.com & 4\% & passur.com & 2\% & bit.nl & 6\% & rackspace.com & 4\% \\ \hline
 	microsoft.com & 1\% & openida.com & 1\% & yahoo.com & 4\% & ibm.com & 3\% \\ \hline
 	shapeblue.com & 1\% &di.unipmn.it & 1\% & baby-gnu.org& 3\% & openstack.org & 3\% \\ \hline
-	stratesec.co & 1\% & other & 3\% & fnal.gov& 2\% & dague.net & 3\% \\ \hline
+	stratesec.co & 1\% & others & 3\% & fnal.gov& 2\% & dague.net & 3\% \\ \hline
 	qq.com & 1\% & & & scss.tcd.ie& 2\% & dreamhost.com & 2\% \\ \hline
 	163.com & 1\% & & & msn.com& 1\% & hp.com & 2\% \\ \hline
 	cloudops.com & 1\% & & & vrt.com.au& 1\% & robertcollins.com & 2\% \\ \hline
-	other & 19\% & & & other& 22\% & other &36\% \\ \hline
+	others & 19\% & & & others & 22\% & others &36\% \\ \hline
 \end{tabular}
 \end{table*}
 
@@ -341,10 +341,10 @@ citrix.com & 38\% & eucalyptus.com & 86\% & opennebula.org & 92\% & redhat.com &
     \multicolumn{4}{|c|}{Developer Communities} &
     \multicolumn{4}{|c|}{User Communities} \\ \hline
 	  & diversity index & growth curves & upper asymptote & growth phase & diversity index & growth curves & upper asymptote & growth phase \\ \hline
-	 CloudStack & 0.2108 & Partial Fit & 110 & decline & 0.2376 & Fit Well & 350 & decline \\ \hline
-	 Eucalyptus & 0.7542 & Not Fit & 50 & bi-phase & 0.4379 & Not Fit & 200 & bi-phase \\ \hline
-	 OpenNebula & 0.8498 & Not Fit & 10 & stationary & 0.2054 & Fit Well & 80 & stationary \\ \hline
-	 OpenStack  & 0.1732 & Fit Well & 1000 & exponential & 0.2082 & Fit Well & 1500 & exponential \\ \hline
+	 CloudStack & 0.1912 & Partial Fit & 110 & decline & 0.2015 & Fit Well & 350 & decline \\ \hline
+	 Eucalyptus & 0.7541 & Not Fit & 50 & bi-phase & 0.4370 & Not Fit & 200 & bi-phase \\ \hline
+	 OpenNebula & 0.8489 & Not Fit & 10 & stationary & 0.1570 & Fit Well & 80 & stationary \\ \hline
+	 OpenStack  & 0.0643 & Fit Well & 1000 & exponential & 0.0786 & Fit Well & 1500 & exponential \\ \hline
 \end{tabular}
 \end{table*}
 
@@ -366,7 +366,7 @@ D=\sum_{i=0}^{i=n} p_{i}^{2},
 \end{equation}
 \\where \textit{D} is Simpson's diversity index, \textit{n} is the number of organizations in the community, while \textit{p\textsubscript{i}} represents the contribution from the \textit{i\textsuperscript{th}} organization. When the Simpson's diversity index is 0, the community has infinite diversity. When the Simpson's diversity index is 1, the community has no diversity. That is, the smaller the value \textit{D}, the greater the diversity. 
 
-We used the data from Table \ref{tbl:dev} and Table \ref{tbl:user} to calculate the Simpson's diversity index. Table \ref{tbl:diversity} shows the diversity index of the developer and user communities, as well as how they fit with the growth curves, the upper asymptote of the growth curves, and the growth phase they are in. As shown in the table, communities with greater diversity exhibit closer-to-organic growth behavior and fit better with the growth curves. The upper asymptote of the growth curves represents the theoretical maximum size of the communities. As we can see, communities with greater diversity have greater upper asymptote, and are usually larger in terms of active members. 
+We used the data from Table \ref{tbl:dev} and Table \ref{tbl:user} to calculate the Simpson's diversity index. Because the "others" group represents members with close-to-infinite diversity it was taken out of the calculation. Table \ref{tbl:diversity} shows the diversity index of the developer and user communities, as well as how they fit with the growth curves, the upper asymptote of the growth curves, and the growth phase they are in. As shown in the table, communities with greater diversity exhibit closer-to-organic growth behavior and fit better with the growth curves. The upper asymptote of the growth curves represents the theoretical maximum size of the communities. As we can see, communities with greater diversity have greater upper asymptote, and are usually larger in terms of active members. 
 
 
 \section{Related Work}
